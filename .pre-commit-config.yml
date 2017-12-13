@@ -1,0 +1,15 @@
+- repo: git://github.com/dnephin/pre-commit-golang
+  sha: v0.2
+  hooks:
+    - id: go-fmt
+    - id: go-vet
+    - id: go-lint
+    - id: validate-toml
+    - id: no-go-testing
+    - id: gometalinter
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v1.1.1
+    hooks:
+    - id: trailing-whitespace
+    - id: check-added-large-files
+    - id: double-quote-string-fixer
